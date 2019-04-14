@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 const MenuContainer = styled.div`
     height: 200px;
-    width: 100%;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
     
+    @media only screen and (max-width: 550px){
+        width:90%;
+    }
+    width:42.5%;
+    margin: 20px;
     cursor: pointer;
     background: #014f00;
     box-shadow: 10px 10px 8px #888888;
     display: flex;
+    float: left;
+    
    
    
     
@@ -19,7 +21,7 @@ const MenuContainer = styled.div`
 `;
 
 const PadObject = styled.div`
-padding: 5vh;
+// padding: 5vh;
 
 `;
 
@@ -28,7 +30,7 @@ const MenuText = styled.div`
     align-self:center;
     margin: auto;
     font-size: 40px;
-    padding: 40px
+    // padding: 40px
     font-family: Impact;
    
 `;
